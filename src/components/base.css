@@ -1,0 +1,226 @@
+@font-face {
+  font-family: "IndustryInc-3D";
+  src: local("IndustryInc-3D"),
+    url("./fonts/IndustryInc-3D.woff") format("woff");
+}
+
+@font-face {
+  font-family: "IndustryInc-Base";
+  src: local("IndustryInc-Base"),
+    url("./fonts/IndustryInc-Base.woff") format("woff");
+}
+
+.startButton {
+  width: 601px;
+  height: 181px;
+  left: 235px;
+  top: 1630px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.startButton.active.focus,
+.startButton.active:focus,
+.startButton.focus,
+.startButton.hover,
+.startButton.active:hover,
+.startButton.focus:hover,
+.startButton:active.focus,
+.startButton:active:focus,
+.startButton:focus,
+.startButton:hover,
+.startButton:active:hover,
+.startButton:focus:hover,
+
+.StartAgain.active.focus,
+.StartAgain.active:focus,
+.StartAgain.focus,
+.StartAgain.hover,
+.StartAgain.active:hover,
+.StartAgain.focus:hover,
+.StartAgain:active.focus,
+.StartAgain:active:focus,
+.StartAgain:focus,
+.StartAgain:hover,
+.StartAgain:active:hover,
+.StartAgain:focus:hover {
+  outline: 0;
+  box-shadow: none;
+}
+
+
+
+
+
+.Background {
+  position: fixed;
+  background-image: url(assets/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 1080px;
+  height: 1920px;
+}
+
+.volumeMeter {
+  position: absolute;
+  left: 480px;
+  top: 1600px;
+  transform: scaleY(-1);
+}
+
+.maxMeter {
+  position: absolute;
+  left: 470px;
+  top: 320px;
+  transform: scaleY(-1);
+}
+
+.highScoreBubble {
+  position: absolute;
+  transform: scaleY(-1);
+  left: -270px;
+  height: 145px;
+  width: 235px;
+}
+
+.highScore {
+  font-family: IndustryInc-Base;
+  font-size: 90px;
+  color: #ffe900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 205px;
+  position: absolute;
+  top: -15px;
+}
+
+.highScore3D {
+  font-family: IndustryInc-3D;
+  font-size: 90px;
+  color: #4e009e;
+  width: 205px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -15px;
+}
+
+.can {
+  position: absolute;
+  transform: rotateX(180deg);
+  background: repeating-linear-gradient(
+    -45deg,
+    #ffffff,
+    #ffffff 4px,
+    transparent 4px,
+    transparent 20px
+  );
+}
+.Rectangle {
+  left: 490px;
+  top: 320px;
+  position: absolute;
+}
+
+#decibelGradation {
+  position: absolute;
+  left: 0px;
+}
+
+#decibelMeter {
+  position: absolute;
+  left: 0px;
+}
+
+.countdown {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+}
+
+.num1 {
+  position: absolute;
+  top: 1750px;
+  left: 280px;
+  width: 100px;
+  height: 100px;
+}
+.num2 {
+  position: absolute;
+  top: 1765px;
+  left: 385px;
+  width: 100px;
+  height: 100px;
+}
+.num3 {
+  position: absolute;
+  top: 1770px;
+  left: 490px;
+  width: 100px;
+  height: 100px;
+}
+.num4 {
+  position: absolute;
+  top: 1765px;
+  right: 385px;
+  width: 100px;
+  height: 100px;
+}
+.num5 {
+  position: absolute;
+  top: 1750px;
+  right: 280px;
+  width: 100px;
+  height: 100px;
+}
+
+.Result {
+  position: absolute;
+  top: 0px;
+}
+
+.StartAgain {
+  position: absolute;
+  width: 690px;
+  height: 150px;
+  left: 190px;
+  top: 1655px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+.MaxDBReading {
+  font-family: IndustryInc-Base;
+  position: absolute;
+  font-size: 300px;
+  color: #ffe900;
+  display: flex;
+  height: 23vh;
+}
+
+.MaxDBReading3D {
+  font-family: IndustryInc-3D;
+  position: absolute;
+  font-size: 300px;
+  color: #4e009e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Reading {
+  height: 98vh;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
