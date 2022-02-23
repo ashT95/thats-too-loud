@@ -1,8 +1,7 @@
 /* eslint-disable no-undef */
 
 import { useEffect, useRef, useState } from "react";
-import "../phidget22.min.js";
-import "../sha256.min.js";
+
 
 var ch = [];
 var openPromiseList = [];
