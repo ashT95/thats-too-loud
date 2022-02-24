@@ -52,17 +52,7 @@ export default function Base() {
     return () => clearInterval(interval);
   }, [active, videoCounter, buttonCounter, mainCounter]);
 
-  /*
-  navigator.mediaDevices.enumerateDevices().then(function(devices) {
-    devices.forEach(function(device) {
-      console.log(device.kind + ": " + device.label +
-                  " id = " + device.deviceId);
-    });
-  })
-  .catch(function(err) {
-    console.log(err.name + ": " + err.message);
-  });
-*/
+
 
   const getMicrophone = async () => {
     const audio = await navigator.mediaDevices.getUserMedia({
@@ -115,20 +105,6 @@ export default function Base() {
 
       {meterPage && (
         <div className="ScreamScreen">
-          <link
-            rel="preload"
-            as="font"
-            href="/fonts/IndustryInc-Base.woff"
-            type="font/woff"
-            crossOrigin="anonymous"
-          ></link>
-          <link
-            rel="preload"
-            as="font"
-            href="/fonts/IndustryInc-3D.woff"
-            type="font/woff"
-            crossOrigin="anonymous"
-          ></link>
           <Fade duration={1000}>
             <img
               src={DecibelGradation}

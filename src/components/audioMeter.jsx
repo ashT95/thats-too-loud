@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Result from "./result";
-import PopUpCanvas from "./popUpCanvas.jsx";
+import PopUpCanvas from "./popUpCanvas";
 import PhidgetLights from "./phidgetLights";
 
 let average = 0;

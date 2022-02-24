@@ -1,13 +1,13 @@
 @font-face {
   font-family: "IndustryInc-3D";
   src: local("IndustryInc-3D"),
-    url("./fonts/IndustryInc-3D.woff") format("woff");
+    url(fonts/IndustryInc-3D.woff) format("woff");
 }
 
 @font-face {
   font-family: "IndustryInc-Base";
   src: local("IndustryInc-Base"),
-    url("./fonts/IndustryInc-Base.woff") format("woff");
+    url(fonts/IndustryInc-Base.woff) format("woff");
 }
 
 .startButton {
