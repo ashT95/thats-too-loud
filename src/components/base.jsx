@@ -54,8 +54,8 @@ export default function Base() {
 
 
 
-  const getMicrophone = () => {
-    const audio = navigator.mediaDevices.getUserMedia({
+  const getMicrophone = async () => {
+    const audio = await navigator.mediaDevices.getUserMedia({
       audio: true,
       video: false,
     });

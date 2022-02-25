@@ -7,7 +7,7 @@ var openPromiseList = [];
 
 function PhidgetLights(props) {
   const { maxVol } = props;
-  const [value, setValue] = useState(0.000000);
+  const [value, setValue] = useState(0);
   const [index, setIndex] = useState(0);
   const [attached, setAttached] = useState(false);
 
