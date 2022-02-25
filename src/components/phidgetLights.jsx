@@ -7,7 +7,7 @@ var openPromiseList = [];
 
 function PhidgetLights(props) {
   const { maxVol } = props;
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(0.000000);
   const [index, setIndex] = useState(0);
   const [attached, setAttached] = useState(false);
 
@@ -18,8 +18,6 @@ function PhidgetLights(props) {
   useEffect(() => {
     let interval;
 
-    console.log(audValue, whole, decimal, index);
-    
     if (attached) {
       interval = setInterval(() => {
         if (index < whole) {
@@ -93,13 +91,11 @@ function PhidgetLights(props) {
 
   function onAttachHandler(ch) {
     var deviceSerialNumber = ch.getDeviceSerialNumber();
-    console.log(deviceSerialNumber);
     setAttached(true);
   }
 
   function onDetachHandler(ch) {
     var deviceSerialNumber = ch.getDeviceSerialNumber();
-    console.log(deviceSerialNumber);
   }
 
   function useInterval(callback, delay) {
