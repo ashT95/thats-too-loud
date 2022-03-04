@@ -51,10 +51,6 @@
   box-shadow: none;
 }
 
-
-
-
-
 .Background {
   position: fixed;
   background-image: url(assets/bg.png);
@@ -67,7 +63,7 @@
 .volumeMeter {
   position: absolute;
   left: 480px;
-  top: 1600px;
+  top: 1620px;
   transform: scaleY(-1);
 }
 
@@ -112,6 +108,7 @@
 
 .can {
   position: absolute;
+  border-radius: 0px 0px 52px 52px;
   transform: rotateX(180deg);
   background: repeating-linear-gradient(
     -45deg,
@@ -121,6 +118,7 @@
     transparent 20px
   );
 }
+
 .Rectangle {
   left: 490px;
   top: 320px;
@@ -203,7 +201,9 @@
   font-size: 300px;
   color: #ffe900;
   display: flex;
-  height: 23vh;
+  justify-content: center;
+  align-items: center;
+  top: 730px;
 }
 
 .MaxDBReading3D {
@@ -214,7 +214,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 23vh;
+  top:740px;
 }
 
 .Reading {
@@ -228,5 +228,5 @@
 
 .startAgainVideo {
   position: absolute;
-  top:1400px;
+  top:1420px;
 }
