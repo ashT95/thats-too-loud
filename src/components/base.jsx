@@ -35,11 +35,11 @@ export default function Base() {
       setVideoCounter(0);
     }
 
-    if (active && buttonCounter < 6) {
+    if (active && buttonCounter < 11) {
       interval = setInterval(() => {
         setButtonCounter((buttonCounter) => buttonCounter + 1);
       }, 1000);
-    } else if (buttonCounter >= 6) {
+    } else if (buttonCounter >= 11) {
       interval = setInterval(() => {
         setMainCounter((mainCounter) => mainCounter + 1);
       }, 1000);
@@ -105,6 +105,20 @@ export default function Base() {
 
       {meterPage && (
         <div className="ScreamScreen">
+          <link
+            rel="preload"
+            as="font"
+            href="/fonts/IndustryInc-Base.woff"
+            type="font/woff"
+            crossOrigin="anonymous"
+          ></link>
+          <link
+            rel="preload"
+            as="font"
+            href="/fonts/IndustryInc-3D.woff"
+            type="font/woff"
+            crossOrigin="anonymous"
+          ></link>
           <Fade duration={1000}>
             <img
               src={DecibelGradation}
@@ -140,7 +154,7 @@ export default function Base() {
         </div>
       )}
 
-      {buttonCounter >= 6 && (
+      {buttonCounter >= 11 && (
         <Fade duration={1000}>
           <button className="StartAgain" onClick={again}>
             <img src={startAgain} alt="Start Again" />

@@ -214,6 +214,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 23vh;
 }
 
 .Reading {
@@ -223,4 +224,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.startAgainVideo {
+  position: absolute;
+  top:1400px;
 }

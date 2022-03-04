@@ -35,11 +35,7 @@ const PopUpCanvas = (props) => {
     context.moveTo(0, 0);
 
     y = (count / 140.0) * 1270;
-
-    {
-      counter < 5 && context.fillRect(0, y, 140, 4);
-    }
-
+    context.fillRect(0, y, 140, 5);
     context.stroke();
   };
 
