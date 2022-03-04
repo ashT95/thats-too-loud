@@ -5,7 +5,7 @@ import StartButton from "./assets/button-start.png";
 import AttractScreen from "./assets/attract.webm";
 import { Fade } from "react-awesome-reveal";
 import DecibelGradation from "./assets/decivel-meter-level-gradation.png";
-import DecibelMeter from "./assets/decivel-meter-level-top.png";
+import Meter from "./assets/decibelMeter.png";
 import DecibelTitle from "./assets/title-decibel-meter.webm";
 import Countdown from "./assets/countdown.webm";
 import Light from "./light";
@@ -125,7 +125,7 @@ export default function Base() {
               alt="GradationImg"
               id="decibelGradation"
             />
-            <img src={DecibelMeter} alt="DecibelMeter" id="decibelMeter" />
+            <img src={Meter} alt="DecibelMeter" id="decibelMeter" />
             <video autoPlay muted>
               <source src={DecibelTitle} type="video/webm" />
             </video>
