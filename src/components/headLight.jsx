@@ -6,7 +6,6 @@ let headLight;
 
 function HeadLight() {
 
-  headLight.setDutyCycle(1.000000);
   
   useEffect(() => {
     const phidgetConnection = new phidget22.Connection(8989, "localhost");
