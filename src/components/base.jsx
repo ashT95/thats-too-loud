@@ -11,6 +11,7 @@ import Countdown from "./assets/countdown.webm";
 import Light from "./light";
 import startAgain from "./assets/button-start-again.png";
 import IdleLights from "./idleLights";
+import HeadLight from "./headLight";
 
 
 export default function Base() {
@@ -86,6 +87,7 @@ export default function Base() {
 
   return (
     <div className="Background">
+      <HeadLight />
       {startpage && (
         <div>
           <IdleLights /> 
