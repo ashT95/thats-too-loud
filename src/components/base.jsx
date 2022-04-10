@@ -13,7 +13,6 @@ import startAgain from "./assets/button-start-again.png";
 import IdleLights from "./idleLights";
 import HeadLight from "./headLight";
 
-
 export default function Base() {
   const [audio, setAudio] = useState(null);
   const [active, setActive] = useState(false);
@@ -87,7 +86,7 @@ export default function Base() {
 
   return (
     <div className="Background">
-      <HeadLight />
+    <HeadLight />
       {startpage && (
         <div>
           <IdleLights /> 
