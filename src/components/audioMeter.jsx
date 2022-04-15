@@ -7,7 +7,7 @@ let average = 0;
 let maxVol = 0;
 
 const AudioMeter = (props) => {
-  const { audiodata} = props;
+  const { audiodata, tower} = props;
   const [averageArray, setAverageArray] = useState([]);
   const [counter, setCounter] = useState(0);
   const canvasRef = useRef(null);
@@ -84,7 +84,7 @@ const AudioMeter = (props) => {
       </div>
 
       <div className="phidgetLights">
-    {  <PhidgetLights maxVol={maxVol} />  }
+    {  <PhidgetLights maxVol={maxVol} tower = {tower}/>  }
       </div>
 
       <div className="Result">

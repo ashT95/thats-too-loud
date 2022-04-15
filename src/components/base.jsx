@@ -11,9 +11,10 @@ import Countdown from "./assets/countdown.webm";
 import Light from "./light";
 import startAgain from "./assets/button-start-again.png";
 import IdleLights from "./idleLights";
-import HeadLight from "./headLight";
 
-export default function Base() {
+export default function Base(props) {
+
+  const {tower} = props;
   const [audio, setAudio] = useState(null);
   const [active, setActive] = useState(false);
   const [startpage, setStartpage] = useState(true);
@@ -53,7 +54,6 @@ export default function Base() {
   }, [active, videoCounter, buttonCounter, mainCounter]);
 
 
-
   const getMicrophone = async () => {
     const audio = await navigator.mediaDevices.getUserMedia({
       audio: true,
@@ -86,10 +86,10 @@ export default function Base() {
 
   return (
     <div className="Background">
-    <HeadLight />
+    <div>
+    <IdleLights tower = {tower} meterPage = {meterPage} active = {active}/> 
       {startpage && (
-        <div>
-          <IdleLights /> 
+        <div>   
           <Fade duration={1000}>
             <div>
               <video autoPlay loop muted>
@@ -106,20 +106,6 @@ export default function Base() {
 
       {meterPage && (
         <div className="ScreamScreen">
-          <link
-            rel="preload"
-            as="font"
-            href="/fonts/IndustryInc-Base.woff"
-            type="font/woff"
-            crossOrigin="anonymous"
-          ></link>
-          <link
-            rel="preload"
-            as="font"
-            href="/fonts/IndustryInc-3D.woff"
-            type="font/woff"
-            crossOrigin="anonymous"
-          ></link>
           <Fade duration={1000}>
             <img
               src={DecibelGradation}
@@ -150,7 +136,7 @@ export default function Base() {
         <div className="MeasureVol">
           <Light />
           <div>
-            <AudioAnalyser audio = {audio}/> 
+            <AudioAnalyser audio = {audio} tower = {tower}/> 
           </div>
         </div>
       )}
@@ -162,6 +148,7 @@ export default function Base() {
           </button>
         </Fade>
       )}
+    </div>
     </div>
   );
 }
